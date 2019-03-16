@@ -4,21 +4,21 @@ Colours and backgrounds for common.css
 -------------------------------------------------------------- */
 
 html, body {
-	color: #536482;
-	background-color: #F5F7FA;
+	color: #2195ab; /* CILFA ORIG: color: #6e6470; */
+	background-color: #f8f7f8;
 }
 
 h1 {
-	color: #FFFFFF;
+	color: #2195ab; /* CILFA ORIG: color: #FFF; */
 }
 
 h2 {
-	color: #28313F;
+	color: #2195ab; /* CILFA ORIG: color: #363036; */
 }
 
 h3 {
 	border-bottom-color: #CCCCCC;
-	color: #115098;
+	color: #694061;
 }
 
 hr {
@@ -31,16 +31,17 @@ hr {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #105289; }
-a:hover { color: #D31141; }
+a { color: #0b3038; } /* CILFA ORIG color: #5f3a5a; */
+a:hover { color: #53285d; }
 
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
 	color: #FFFFFF;
+	padding-left: 4px; /* CILFA ADDED */
 }
 
 .forumbg .header a:hover, .forabg .header a:hover, th a:hover {
-	color: #A8D8FF;
+	color: #e1c6de;
 }
 
 /* Notification mark read link */
@@ -50,18 +51,18 @@ a:hover { color: #D31141; }
 
 /* Post body links */
 .postlink {
-	border-bottom-color: #368AD2;
-	color: #368AD2;
+	border-bottom-color: #9b6d95;
+	color: #9b6d95;
 }
 
 .postlink:visited {
-	border-bottom-color: #5D8FBD;
-	color: #5D8FBD;
+	border-bottom-color: #9b7f97;
+	color: #9b7f97;
 }
 
 .postlink:hover {
-	background-color: #D0E4F6;
-	color: #0D4473;
+	background-color: #e9dde7;
+	color: #4f314b;
 }
 
 .signature a, .signature a:hover {
@@ -75,41 +76,47 @@ a:hover { color: #D31141; }
 
 /* Arrow links  */
 .arrow-left:hover, .arrow-right:hover {
-	color: #368AD2;
+	color: #9b6d95;
 }
 
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 .wrap {
 	background-color: #FFF;
-	border-color: #E6E9ED;
+	border-color: #ebe8ea;
 }
 
 .headerbar {
 	color: #FFFFFF;
+	background-color: #fff;
 }
 
 .headerbar, .forumbg {
-	background-color: #12A3EB;
-	background-image: -webkit-linear-gradient(top, #6ACEFF 0%, #0076B1 2px, #12A3EB 92px, #12A3EB 100%);
-	background-image: linear-gradient(to bottom, #6ACEFF 0%,#0076B1 2px,#12A3EB 92px,#12A3EB 100%);
+	/* CILFA: */
+	background-color: #2195ab; 
 	background-repeat: repeat-x;
 }
 
 .forabg {
-	background-color: #0076B1;
-	background-image: -webkit-linear-gradient(top, #6ACEFF 0%, #12A3EB 2px, #0076B1 92px, #0076B1 100%);
-	background-image: linear-gradient(to bottom, #6ACEFF 0%,#12A3EB 2px,#0076B1 92px,#0076B1 100%);
+	background-color: #2195ab; /* CILFA ORIG: #733e73 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b7fff5+0,15dcff+11,2195ab+65,008299+100;Borstvoedingsforum+1 */
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0) 100%);
+	
+	/* CILFA TMP Disabled 9-3-2019
+	background-image: -webkit-linear-gradient(top, #cb9ecb 0%, #733e73 2px, #9f5e9f 92px, #9f5e9f 100%);
+	background-image: linear-gradient(to bottom, #cb9ecb 0%,#733e73 2px,#9f5e9f 92px,#9f5e9f 100%);	
 	background-repeat: repeat-x;
+	*/
+	border-color: #ebebeb;
 }
 
 .navbar {
-	background-color: #CADCEB;
+	/* CILFA ORIG: background-color: #dfd6de; */
 }
 
 .panel {
-	background-color: #ECF1F3;
-	color: #28313F;
+	background-color: #f0eef1;
+	color: #363036;
 }
 
 .post:target .content {
@@ -121,35 +128,35 @@ a:hover { color: #D31141; }
 }
 
 .bg1 {
-	background-color: #ECF3F7;
+	background-color: #fff; /* CILFA ORIG: background-color: #f3f0f3; later #fffaeb*/
 }
 
 table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
-	background-color: #ECF3F7;
+	background-color: #fffaeb; /* CILFA ORIG: background-color: #f3f0f3; */
 }
 
 .bg2 {
-	background-color: #E1EBF2;
+	background-color: #fff; /* CILFA ORIG: background-color: #ece7ec; later #fff5d8 */ 
 }
 
 table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
-	background-color: #E1EBF2;
+	background-color: #fff5d8; /* CILFA ORIG: background-color: #ece7ec; */
 }
 
 .bg3	{
-	background-color: #CADCEB;
+	background-color: #dfd6de;
 }
 
 .ucprowbg {
-	background-color: #DCDEE2;
+	background-color: #dfdee0;
 }
 
 .fieldsbg {
-	background-color: #E7E8EA;
+	background-color: #e9e8e9;
 }
 
 .site_logo {
-	background-image: url("./images/site_logo.gif");
+	background-image: url("./images/logo_HD.png"); /* CILFA ORIG: ... .gif */
 }
 
 /* Horizontal lists
@@ -166,16 +173,16 @@ table.table1 thead th {
 }
 
 table.table1 tbody tr {
-	border-color: #BFC1CF;
+	border-color: #c3c3cc;
 }
 
 table.table1 tbody tr:hover, table.table1 tbody tr.hover {
-	background-color: #CFE1F6;
+	background-color: #e8dde6;
 	color: #000;
 }
 
 table.table1 td {
-	color: #536482;
+	color: #6e6470;
 }
 
 table.table1 tbody td {
@@ -199,17 +206,17 @@ dl.details dt {
 }
 
 dl.details dd {
-	color: #536482;
+	color: #6e6470;
 }
 
 .sep {
-	color: #1198D9;
+	color: #935793;
 }
 
 /* Icon styles
 ---------------------------------------- */
 .icon.icon-blue, a:hover .icon.icon-blue {
-	color: #196db5;
+	color: #7e5078;
 }
 
 .icon.icon-green, a:hover .icon.icon-green{
@@ -217,15 +224,15 @@ dl.details dd {
 }
 
 .icon.icon-red, a:hover .icon.icon-red{
-	color: #BC2A4D;
+	color: #502f57;
 }
 
 .icon.icon-orange, a:hover .icon.icon-orange{
-	color: #FF6600;
+	color: #dd7f5d;
 }
 
 .icon.icon-bluegray, a:hover .icon.icon-bluegray{
-	color: #536482;
+	color: #6e6470;
 }
 
 .icon.icon-gray, a:hover .icon.icon-gray{
@@ -250,35 +257,35 @@ dl.details dd {
 }
 
 .jumpbox-cat-link {
-	background-color: #0076b1;
-	border-top-color: #0076B1;
+	background-color: #733e73;
+	border-top-color: #733e73;
 	color: #FFFFFF;
 }
 
 .jumpbox-cat-link:hover {
-	background-color: #12A3EB;
-	border-top-color: #12A3EB;
+	background-color: #9f5e9f;
+	border-top-color: #9f5e9f;
 	color: #FFFFFF;
 }
 
 .jumpbox-forum-link {
-	background-color: #E1EBF2;
+	background-color: #ece7ec;
 }
 
 .jumpbox-forum-link:hover {
-	background-color: #F6F4D0;
+	background-color: #f6eff6;
 }
 
 .jumpbox .dropdown .pointer-inner {
-	border-color: #E1EBF2 transparent;
+	border-color: #ece7ec transparent;
 }
 
 .jumpbox-sub-link {
-	background-color: #E1EBF2;
+	background-color: #ece7ec;
 }
 
 .jumpbox-sub-link:hover {
-	background-color: #F1F8FF;
+	background-color: #faf6f9;
 }
 
 /* Miscellaneous styles
@@ -289,27 +296,27 @@ dl.details dd {
 }
 
 .error {
-	color: #BC2A4D;
+	color: #502f57;
 }
 
 .reported {
-	background-color: #F7ECEF;
+	background-color: #d7db97; /* CILFA ORIG:#9976a2, GEEL: FCF2E8 F9E8E8 */
 }
 
 li.reported:hover {
-	background-color: #ECD5D8 !important;
+	background-color: #fcb5ba !important; /* CILFA ORIG: #966c98 */
 }
 .sticky, .announce {
 	/* you can add a background for stickies and announcements*/
 }
 
 div.rules {
-	background-color: #ECD5D8;
-	color: #BC2A4D;
+	background-color: #F9E8E8; /* CILFA ORIG: #966c98 */
+	color: #502f57;
 }
 
 p.post-notice {
-	background-color: #ECD5D8;
+	background-color: #F9E8E8; /* CILFA ORIG: #966c98 */
 	background-image: none;
 }
 
@@ -318,15 +325,25 @@ p.post-notice {
 Colours and backgrounds for content.css
 -------------------------------------------------------------- */
 
+/* CILFA EDIT VOOR DV - orig color: #f5f2f5 */
+
 ul.forums {
-	background-color: #EEF5F9; /* Old browsers */ /* FF3.6+ */
-	background-image: -webkit-linear-gradient(top, #D2E0EB 0%, #EEF5F9 100%);
-	background-image: linear-gradient(to bottom, #D2E0EB 0%,#EEF5F9 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D2E0EB', endColorstr='#EEF5F9',GradientType=0 ); /* IE6-9 */
+	/* background-color: #e2dbe1;*/ /* Old browsers */ /* FF3.6+ */
+	/* background-image: -webkit-linear-gradient(top, #e2dbe1 0%, #eadaea 50%);*/
+	/* background-image: linear-gradient(to bottom, #e2dbe1 0%,#eadaea 50%);*/ /* W3C */
+	/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2dbe1', endColorstr='#eadaea',GradientType=0 ); *//* IE6-9 */
+	/*CILFA REMOVED 9-3-2019
+	background: #eadaea;
+	background: -moz-linear-gradient(top, #eadaea 0%, #f5f2f5 75%);
+	background: -webkit-linear-gradient(top, #eadaea 0%,#f5f2f5 75%);
+	background: linear-gradient(to bottom, #eadaea 0%,#f5f2f5 75%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eadaea', endColorstr='#f5f2f5',GradientType=0 );
+	*/
+	background: #fff;
 }
 
 ul.topiclist li {
-	color: #4C5D77;
+	color: #675b65;
 }
 
 ul.topiclist dd {
@@ -340,7 +357,7 @@ ul.topiclist dd {
 
 li.row {
 	border-top-color:  #FFFFFF;
-	border-bottom-color: #00608F;
+	/* CILFA ORIG: border-bottom-color: #5d325d; */
 }
 
 li.row strong {
@@ -348,7 +365,7 @@ li.row strong {
 }
 
 li.row:hover {
-	background-color: #F6F4D0;
+	background-color: #f6eff6;
 }
 
 li.row:hover dd {
@@ -377,7 +394,7 @@ li.header dt, li.header dd {
 }
 
 .content h2, .panel h2 {
-	color: #115098;
+	color: #694061;
 	border-bottom-color:  #CCCCCC;
 }
 
@@ -386,8 +403,8 @@ dl.faq dt {
 }
 
 .posthilit {
-	background-color: #F3BFCC;
-	color: #BC2A4D;
+	background-color: #9755a6;
+	color: #502f57;
 }
 
 .announce, .unreadpost {
@@ -408,24 +425,52 @@ dl.faq dt {
 ----------------------------------------*/
 /* Quote block */
 blockquote {
-	background-color: #EBEADD;
-	border-color:#DBDBCE;
+	background-color: #EAEAEA; /* CILFA ORIG: #f4f1f4 */
+	border-color:#DDD; /* CILFA ORIG: #edeaed */
+}
+
+blockquote:before {
+  top: 5px;
+  left: auto;
+  right: 10px;
+  font-size: 2em;
+  color: rgba(68, 68, 68, 0);
 }
 
 blockquote blockquote {
 	/* Nested quotes */
-	background-color:#EFEED9;
+	background-color:#DADADA; /* CILFA ORIG: #f5f1f5 */
+	border-color:#DDD;
 }
 
 blockquote blockquote blockquote {
 	/* Nested quotes */
-	background-color: #EBEADD;
+	background-color: #EAEAEA; /* CILFA ORIG: #f4f1f4 */
+	border-color:#DDD;
+}
+
+blockquote blockquote blockquote blockquote {
+	/* Nested quotes */
+	background-color: #DADADA; /* CILFA ORIG: #f4f1f4 */
+	border-color:#DDD;
+}
+
+blockquote blockquote blockquote blockquote blockquote {
+	/* Nested quotes */
+	background-color: #EAEAEA; /* CILFA ORIG: #f4f1f4 */
+	border-color:#DDD;
+}
+
+blockquote blockquote blockquote blockquote blockquote blockquote {
+	/* Nested quotes */
+	background-color: #DADADA; /* CILFA ORIG: #f4f1f4 */
+	border-color:#DDD;
 }
 
 /* Code block */
 .codebox {
 	background-color: #FFFFFF;
-	border-color: #C9D2D8;
+	border-color: #d3ced2;
 }
 
 .codebox p {
@@ -440,15 +485,15 @@ blockquote blockquote blockquote {
 ----------------------------------------*/
 .attachbox {
 	background-color: #FFFFFF;
-	border-color:  #C9D2D8;
+	border-color:  #d3ced2;
 }
 
 .pm-message .attachbox {
-	background-color: #F2F3F3;
+	background-color: #f2f2f3;
 }
 
 .attachbox dd {
-	border-top-color: #C9D2D8;
+	border-top-color: #d3ced2;
 }
 
 .attachbox p {
@@ -483,14 +528,14 @@ dl.thumbnail dt a:hover {
 }
 
 dl.thumbnail dt a:hover img {
-	border-color: #368AD2;
+	border-color: #9b6d95;
 }
 
 /* Post poll styles
 ----------------------------------------*/
 
 fieldset.polls dl {
-	border-top-color: #DCDEE2;
+	border-top-color: #dfdee0;
 	color: #666666;
 }
 
@@ -507,53 +552,53 @@ fieldset.polls dd div {
 }
 
 .pollbar1 {
-	background-color: #AA2346;
-	border-bottom-color: #74162C;
-	border-right-color: #74162C;
+	background-color: #47294e;
+	border-bottom-color: #311b35;
+	border-right-color: #311b35;
 }
 
 .rtl .pollbar1 {
-	border-left-color: #74162C;
+	border-left-color: #311b35;
 }
 
 .pollbar2 {
-	background-color: #BE1E4A;
-	border-bottom-color: #8C1C38;
-	border-right-color: #8C1C38;
+	background-color: #4d2a56;
+	border-bottom-color: #3a2140;
+	border-right-color: #3a2140;
 }
 
 .rtl .pollbar2 {
-	border-left-color: #8C1C38;
+	border-left-color: #3a2140;
 }
 
 .pollbar3 {
-	background-color: #D11A4E;
-	border-bottom-color: #AA2346;
-	border-right-color: #AA2346;
+	background-color: #522b5d;
+	border-bottom-color: #47294e;
+	border-right-color: #47294e;
 }
 
 .rtl .pollbar3 {
-	border-left-color: #AA2346;
+	border-left-color: #47294e;
 }
 
 .pollbar4 {
-	background-color: #E41653;
-	border-bottom-color: #BE1E4A;
-	border-right-color: #BE1E4A;
+	background-color: #582c65;
+	border-bottom-color: #4d2a56;
+	border-right-color: #4d2a56;
 }
 
 .rtl .pollbar4 {
-	border-left-color: #BE1E4A;
+	border-left-color: #4d2a56;
 }
 
 .pollbar5 {
-	background-color: #F81157;
-	border-bottom-color: #D11A4E;
-	border-right-color: #D11A4E;
+	background-color: #5f2b6f;
+	border-bottom-color: #522b5d;
+	border-right-color: #522b5d;
 }
 
 .rtl .pollbar5 {
-	border-left-color: #D11A4E;
+	border-left-color: #522b5d;
 }
 
 /* Poster profile block
@@ -576,7 +621,7 @@ fieldset.polls dd div {
 }
 
 dd.profile-warnings {
-	color: #BC2A4D;
+	color: #502f57;
 }
 
 /*
@@ -584,24 +629,24 @@ dd.profile-warnings {
 Colours and backgrounds for buttons.css
 -------------------------------------------------------------- */
 .button {
-	border-color: #C7C3BF;
+	border-color: #d8d6d5;
 	background-color: #E9E9E9; /* Old browsers */ /* FF3.6+ */
 	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #E9E9E9 100%);
 	background-image: linear-gradient(to bottom, #FFFFFF 0%,#E9E9E9 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#E9E9E9',GradientType=0 ); /* IE6-9 */
 	box-shadow: 0 0 0 1px #FFFFFF inset;
 	-webkit-box-shadow: 0 0 0 1px #FFFFFF inset;
-	color: #D31141;
+	color: #53285d;
 }
 
 .button:hover,
 .button:focus {
-	border-color: #0A8ED0;
+	border-color: #8b4f8b;
 	background-color: #FFFFFF; /* Old browsers */ /* FF3.6+ */
 	background-image: -webkit-linear-gradient(top, #E9E9E9 0%, #FFFFFF 100%);
 	background-image: linear-gradient(to bottom, #E9E9E9 0%,#FFFFFF 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E9E9E9', endColorstr='#FFFFFF',GradientType=0 ); /* IE6-9 */
-	text-shadow: 1px 1px 0 #FFFFFF, -1px -1px 0 #FFFFFF, -1px -1px 0 rgba(188, 42, 77, 0.2);
+	text-shadow: 1px 1px 0 #FFFFFF, -1px -1px 0 #FFFFFF, -1px -1px 0 rgba(80, 47, 87,  0.2);
 }
 
 
@@ -614,30 +659,30 @@ Colours and backgrounds for buttons.css
 .button-secondary:hover,
 .button:focus .icon,
 .button:hover .icon {
-	color: #0A8ED0;
+	color: #8b4f8b;
 }
 
 .button-search:hover,
 .button-search-end:hover {
-	border-color: #C7C3BF;
+	border-color: #d8d6d5;
 }
 
 .caret	{ border-color: #DADADA; }
-.caret	{ border-color: #C7C3BF; }
+.caret	{ border-color: #d8d6d5; }
 
 .contact-icons a		{ border-color: #DCDCDC; }
-.contact-icons a:hover	{ background-color: #F2F6F9; }
+.contact-icons a:hover	{ background-color: #f7f4f6; }
 
 /* Pagination
 ---------------------------------------- */
 
 .pagination li a {
-	background: #ECEDEE;
+	background: #ededed;
 	filter: none;
-	border-color: #B4BAC0;
+	border-color: #bcb8bb;
 	box-shadow: none;
 	-webkit-box-shadow: none;
-	color: #5C758C;
+	color: #7b6d79;
 }
 
 .pagination li.ellipsis span {
@@ -646,14 +691,14 @@ Colours and backgrounds for buttons.css
 }
 
 .pagination li.active span {
-	background: #4692BF;
-	border-color: #4692BF;
+	background: #957093;
+	border-color: #957093;
 	color: #FFFFFF;
 }
 
 .pagination li a:hover, .pagination li a:hover .icon, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
-	background: #368AD2;
-	border-color: #368AD2;
+	background: #9b6d95;
+	border-color: #9b6d95;
 	filter: none;
 	color: #FFFFFF;
 	text-shadow: none;
@@ -665,11 +710,11 @@ Colours and backgrounds for buttons.css
 .search-box .inputbox,
 .search-box .inputbox:hover,
 .search-box .inputbox:focus {
-	border-color: #C7C3BF;
+	border-color: 2E1536; /* CILFA ORIG: #d8d6d5 */
 }
 
 .search-header {
-	box-shadow: 0 0 10px #0075B0;
+	box-shadow: 0 0 10px #723e72;
 }
 
 /* Icon images
@@ -693,31 +738,31 @@ Colours and backgrounds for buttons.css
 .phpbb_yahoo-icon					{ background-position: -224px 0; }
 
 /* Forum icons & Topic icons */
-.global_read						{ background-image: url("./images/announce_read.gif"); }
+.global_read						{ background-image: url("./images/announce_read.png"); /* CILFA ORIG: ... .gif */}
 .global_read_mine					{ background-image: url("./images/announce_read_mine.gif"); }
-.global_read_locked					{ background-image: url("./images/announce_read_locked.gif"); }
+.global_read_locked					{ background-image: url("./images/announce_read_locked.png"); /* CILFA ORIG: ... .gif */}
 .global_read_locked_mine			{ background-image: url("./images/announce_read_locked_mine.gif"); }
-.global_unread						{ background-image: url("./images/announce_unread.gif"); }
+.global_unread						{ background-image: url("./images/announce_unread.png"); /* CILFA ORIG: ... .gif */ }
 .global_unread_mine					{ background-image: url("./images/announce_unread_mine.gif"); }
-.global_unread_locked				{ background-image: url("./images/announce_unread_locked.gif"); }
+.global_unread_locked				{ background-image: url("./images/announce_unread_locked.png"); /* CILFA ORIG: ... .gif */ }
 .global_unread_locked_mine			{ background-image: url("./images/announce_unread_locked_mine.gif"); }
 
-.announce_read						{ background-image: url("./images/announce_read.gif"); }
+.announce_read						{ background-image: url("./images/announce_read.png"); /* CILFA ORIG: ... .gif */ }
 .announce_read_mine					{ background-image: url("./images/announce_read_mine.gif"); }
-.announce_read_locked				{ background-image: url("./images/announce_read_locked.gif"); }
+.announce_read_locked				{ background-image: url("./images/announce_read_locked.png"); /* CILFA ORIG: ... .gif */ }
 .announce_read_locked_mine			{ background-image: url("./images/announce_read_locked_mine.gif"); }
-.announce_unread					{ background-image: url("./images/announce_unread.gif"); }
+.announce_unread					{ background-image: url("./images/announce_unread.png"); /* CILFA ORIG: ... .gif */ }
 .announce_unread_mine				{ background-image: url("./images/announce_unread_mine.gif"); }
-.announce_unread_locked				{ background-image: url("./images/announce_unread_locked.gif"); }
+.announce_unread_locked				{ background-image: url("./images/announce_unread_locked.png"); /* CILFA ORIG: ... .gif */ }
 .announce_unread_locked_mine		{ background-image: url("./images/announce_unread_locked_mine.gif"); }
 
-.forum_link							{ background-image: url("./images/forum_link.gif"); }
-.forum_read							{ background-image: url("./images/forum_read.gif"); }
-.forum_read_locked					{ background-image: url("./images/forum_read_locked.gif"); }
-.forum_read_subforum				{ background-image: url("./images/forum_read_subforum.gif"); }
-.forum_unread						{ background-image: url("./images/forum_unread.gif"); }
-.forum_unread_locked				{ background-image: url("./images/forum_unread_locked.gif"); }
-.forum_unread_subforum				{ background-image: url("./images/forum_unread_subforum.gif"); }
+.forum_link							{ background-image: url("./images/forum_link.png"); /* CILFA ORIG: ... .gif */ }
+.forum_read							{ background-image: url("./images/forum_read.png"); /* CILFA ORIG: ... .gif */ }
+.forum_read_locked					{ background-image: url("./images/forum_read_locked.png"); /* CILFA ORIG: ... .gif */ }
+.forum_read_subforum				{ background-image: url("./images/forum_read_subforum.png"); /* CILFA ORIG: ... .gif */ }
+.forum_unread						{ background-image: url("./images/forum_unread.png"); /* CILFA ORIG: ... .gif */ }
+.forum_unread_locked				{ background-image: url("./images/forum_unread_locked.png"); /* CILFA ORIG: ... .gif */ }
+.forum_unread_subforum				{ background-image: url("./images/forum_unread_subforum.png"); /* CILFA ORIG: ... .gif */ }
 
 .sticky_read						{ background-image: url("./images/sticky_read.gif"); }
 .sticky_read_mine					{ background-image: url("./images/sticky_read_mine.gif"); }
@@ -728,21 +773,21 @@ Colours and backgrounds for buttons.css
 .sticky_unread_locked				{ background-image: url("./images/sticky_unread_locked.gif"); }
 .sticky_unread_locked_mine			{ background-image: url("./images/sticky_unread_locked_mine.gif"); }
 
-.topic_moved						{ background-image: url("./images/topic_moved.gif"); }
+.topic_moved						{ background-image: url("./images/topic_moved.png"); /* CILFA ORIG: ... .gif */ }
 .pm_read,
-.topic_read							{ background-image: url("./images/topic_read.gif"); }
-.topic_read_mine					{ background-image: url("./images/topic_read_mine.gif"); }
-.topic_read_hot						{ background-image: url("./images/topic_read_hot.gif"); }
-.topic_read_hot_mine				{ background-image: url("./images/topic_read_hot_mine.gif"); }
-.topic_read_locked					{ background-image: url("./images/topic_read_locked.gif"); }
-.topic_read_locked_mine				{ background-image: url("./images/topic_read_locked_mine.gif"); }
+.topic_read							{ background-image: url("./images/topic_read.png"); /* CILFA ORIG: ... .gif */ }
+.topic_read_mine					{ background-image: url("./images/topic_read_mine.png"); /* CILFA ORIG: ... .gif */ }
+.topic_read_hot						{ background-image: url("./images/topic_read_hot.png"); /* CILFA ORIG: ... .gif */ }
+.topic_read_hot_mine				{ background-image: url("./images/topic_read_hot_mine.png"); /* CILFA ORIG: ... .gif */ }
+.topic_read_locked					{ background-image: url("./images/topic_read_locked.png"); /* CILFA ORIG: ... .gif */ }
+.topic_read_locked_mine				{ background-image: url("./images/topic_read_locked_mine.png"); /* CILFA ORIG: ... .gif */ }
 .pm_unread,
-.topic_unread						{ background-image: url("./images/topic_unread.gif"); }
-.topic_unread_mine					{ background-image: url("./images/topic_unread_mine.gif"); }
-.topic_unread_hot					{ background-image: url("./images/topic_unread_hot.gif"); }
-.topic_unread_hot_mine				{ background-image: url("./images/topic_unread_hot_mine.gif"); }
-.topic_unread_locked				{ background-image: url("./images/topic_unread_locked.gif"); }
-.topic_unread_locked_mine			{ background-image: url("./images/topic_unread_locked_mine.gif"); }
+.topic_unread						{ background-image: url("./images/topic_unread.png"); /* CILFA ORIG: ... .gif */ }
+.topic_unread_mine					{ background-image: url("./images/topic_unread_mine.png"); /* CILFA ORIG: ... .gif */ }
+.topic_unread_hot					{ background-image: url("./images/topic_unread_hot.png"); /* CILFA ORIG: ... .gif */ }
+.topic_unread_hot_mine				{ background-image: url("./images/topic_unread_hot_mine.png"); /* CILFA ORIG: ... .gif */ }
+.topic_unread_locked				{ background-image: url("./images/topic_unread_locked.png"); /* CILFA ORIG: ... .gif */ }
+.topic_unread_locked_mine			{ background-image: url("./images/topic_unread_locked_mine.png"); /* CILFA ORIG: ... .gif */ }
 
 
 /*
@@ -754,16 +799,16 @@ Colours and backgrounds for cp.css
 ----------------------------------------*/
 
 .panel-container h3, .panel-container hr, .cp-menu hr {
-	border-color: #A4B3BF;
+	border-color: #b6adb5;
 }
 
 .panel-container .panel li.row {
-	border-bottom-color: #B5C1CB;
+	border-bottom-color: #c3bdc3;
 	border-top-color: #F9F9F9;
 }
 
 ul.cplist {
-	border-top-color: #B5C1CB;
+	border-top-color: #c3bdc3;
 }
 
 .panel-container .panel li.header dd, .panel-container .panel li.header dt {
@@ -776,30 +821,30 @@ ul.cplist {
 }
 
 .cp-main .pm-message {
-	border-color: #DBDEE2;
+	border-color: #e0dddf;
 	background-color: #FFFFFF;
 }
 
 /* CP tabbed menu
 ----------------------------------------*/
 .tabs .tab > a {
-	background: #BACCD9;
-	color: #536482;
+	background: #cec5cd;
+	color: #6e6470;
 }
 
 .tabs .tab > a:hover {
-	background: #DDEDFB;
-	color: #D31141;
+	background: #f1e8ef;
+	color: #53285d;
 }
 
 .tabs .activetab > a,
 .tabs .activetab > a:hover {
-	background-color: #CADCEB; /* Old browsers */ /* FF3.6+ */
-	background-image: -webkit-linear-gradient(top, #E2F2FF 0%, #CADCEB 100%);
-	background-image: linear-gradient(to bottom, #E2F2FF 0%,#CADCEB 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E2F2FF', endColorstr='#CADCEB',GradientType=0 ); /* IE6-9 */
-	border-color: #CADCEB;
-	box-shadow: 0 1px 1px #F2F9FF inset;
+	background-color: #dfd6de; /* Old browsers */ /* FF3.6+ */
+	background-image: -webkit-linear-gradient(top, #f5ecf4 0%, #dfd6de 100%);
+	background-image: linear-gradient(to bottom, #f5ecf4 0%,#dfd6de 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5ecf4', endColorstr='#dfd6de',GradientType=0 ); /* IE6-9 */
+	border-color: #dfd6de;
+	box-shadow: 0 1px 1px #faf7fa inset;
 	color: #333333;
 }
 
@@ -810,7 +855,7 @@ ul.cplist {
 /* Mini tabbed menu used in MCP
 ----------------------------------------*/
 .minitabs .tab > a {
-	background-color: #E1EBF2;
+	background-color: #ece7ec;
 }
 
 .minitabs .activetab > a,
@@ -822,11 +867,11 @@ ul.cplist {
 /* Responsive tabs
 ----------------------------------------*/
 .responsive-tab .responsive-tab-link:before {
-	border-color: #536482;
+	border-color: #6e6470;
 }
 
 .responsive-tab .responsive-tab-link:hover:before {
-	border-color: #D31141;
+	border-color: #53285d;
 }
 
 /* UCP navigation menu
@@ -835,39 +880,39 @@ ul.cplist {
 /* Link styles for the sub-section links */
 .navigation a {
 	color: #333;
-	background: #CADCEB; /* Old browsers */ /* FF3.6+ */
-	background: -webkit-linear-gradient(left, #B4C4D1 50%, #CADCEB 100%);
-	background: linear-gradient(to right, #B4C4D1 50%,#CADCEB 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B4C4D1', endColorstr='#CADCEB',GradientType=1 ); /* IE6-9 */
+	background: #dfd6de; /* Old browsers */ /* FF3.6+ */
+	background: -webkit-linear-gradient(left, #c7bec6 50%, #dfd6de 100%);
+	background: linear-gradient(to right, #c7bec6 50%,#dfd6de 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7bec6', endColorstr='#dfd6de',GradientType=1 ); /* IE6-9 */
 }
 
 .rtl .navigation a {
-	background: #B4C4D1; /* Old browsers */ /* FF3.6+ */
-	background: -webkit-linear-gradient(left, #CADCEB 50%, #B4C4D1 100%);
-	background: linear-gradient(to right, #CADCEB 50%,#B4C4D1 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CADCEB', endColorstr='#B4C4D1',GradientType=1 ); /* IE6-9 */
+	background: #c7bec6; /* Old browsers */ /* FF3.6+ */
+	background: -webkit-linear-gradient(left, #dfd6de 50%, #c7bec6 100%);
+	background: linear-gradient(to right, #dfd6de 50%,#c7bec6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfd6de', endColorstr='#c7bec6',GradientType=1 ); /* IE6-9 */
 }
 
 .navigation a:hover {
-	background: #AABAC6;
-	color: #BC2A4D;
+	background: #bcb4bb;
+	color: #502f57;
 	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 
 .navigation .active-subsection a {
 	background: #F9F9F9;
-	color: #D31141;
+	color: #53285d;
 	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 
 .navigation .active-subsection a:hover {
-	color: #D31141;
+	color: #53285d;
 }
 
 @media only screen and (max-width: 900px), only screen and (max-device-width: 900px)
 {
 	#navigation a, .rtl #navigation a {
-		background: #B2C2CF;
+		background: #c5bcc4;
 	}
 }
 
@@ -887,11 +932,11 @@ ul.cplist {
 
 /* Friends list */
 .cp-mini {
-	background-color: #EEF5F9;
+	background-color: #f5f2f5;
 }
 
 dl.mini dt {
-	color: #425067;
+	color: #584f58;
 }
 
 /* PM Styles
@@ -903,20 +948,20 @@ dl.mini dt {
 
 /* PM marking colours */
 .pmlist li.pm_message_reported_colour, .pm_message_reported_colour {
-	border-left-color: #BC2A4D;
-	border-right-color: #BC2A4D;
+	border-left-color: #502f57;
+	border-right-color: #502f57;
 }
 
 .pmlist li.pm_marked_colour, .pm_marked_colour {
-	border-color: #FF6600;
+	border-color: #dd7f5d;
 }
 
 .pmlist li.pm_replied_colour, .pm_replied_colour {
-	border-color: #A9B8C2;
+	border-color: #b9b2b9;
 }
 
 .pmlist li.pm_friend_colour, .pm_friend_colour {
-	border-color: #5D8FBD;
+	border-color: #9b7f97;
 }
 
 .pmlist li.pm_foe_colour, .pm_foe_colour {
@@ -947,7 +992,7 @@ select {
 }
 
 label {
-	color: #425067;
+	color: #584f58;
 }
 
 option.disabled-option {
@@ -975,7 +1020,7 @@ fieldset.fields2 dl:hover dt label {
 
 /* Quick-login on index page */
 fieldset.quick-login input.inputbox {
-	background-color: #F2F3F3;
+	background-color: #f2f2f3;
 }
 
 /* Posting page styles
@@ -990,14 +1035,14 @@ fieldset.quick-login input.inputbox {
 }
 
 .message-box textarea.drag-n-drop-highlight {
-	outline-color: rgba(17, 163, 234, 0.5);
+	outline-color: rgba(158, 93, 158,  0.5);
 }
 
 /* Input field styles
 ---------------------------------------- */
 .inputbox {
 	background-color: #FFFFFF;
-	border-color: #B4BAC0;
+	border-color: #bcb8bb;
 	color: #333333;
 }
 
@@ -1010,11 +1055,11 @@ fieldset.quick-login input.inputbox {
 }
 
 .inputbox:hover {
-	border-color: #11A3EA;
+	border-color: #9e5d9e;
 }
 
 .inputbox:focus {
-	border-color: #11A3EA;
+	border-color: #9e5d9e;
 }
 
 .inputbox:focus:-moz-placeholder {
@@ -1057,8 +1102,8 @@ a.button1, a.button2 {
 
 /* Hover states */
 a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
-	border-color: #D31141;
-	color: #D31141;
+	border-color: #53285d;
+	color: #53285d;
 	background-color: #D2D2D2; /* Old browsers */ /* FF3.6+ */
 	background-image: -webkit-linear-gradient(top, #EFEFEF 0%, #D2D2D2 100%);
 	background-image: linear-gradient(to bottom, #EFEFEF 0%,#D2D2D2 100%); /* W3C */
@@ -1067,8 +1112,8 @@ a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, inpu
 
 /* Focus states */
 input.button1:focus, input.button2:focus, input.button3:focus {
-	border-color: #11A3EA;
-	color: #0F4987;
+	border-color: #9e5d9e;
+	color: #5d3956;
 }
 
 input.disabled {
@@ -1095,7 +1140,7 @@ input.disabled {
 }
 
 .dropdown-extended ul li:hover {
-	background-color: #CFE1F6;
+	background-color: #e8dde6;
 	color: #000000;
 }
 
@@ -1110,10 +1155,10 @@ input.disabled {
 }
 
 .dropdown-extended .header {
-	background-color: #F1F8FF; /* Old browsers */ /* FF3.6+ */
-	background-image: -webkit-linear-gradient(top, #F1F8FF 0%, #CADCEB 100%);
-	background-image: linear-gradient(to bottom, #F1F8FF 0%,#CADCEB 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F1F8FF', endColorstr='#CADCEB',GradientType=0 ); /* IE6-9 */
+	background-color: #faf6f9; /* Old browsers */ /* FF3.6+ */
+	background-image: -webkit-linear-gradient(top, #faf6f9 0%, #dfd6de 100%);
+	background-image: linear-gradient(to bottom, #faf6f9 0%,#dfd6de 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faf6f9', endColorstr='#dfd6de',GradientType=0 ); /* IE6-9 */
 }
 
 .dropdown .pointer {
@@ -1125,7 +1170,7 @@ input.disabled {
 }
 
 .dropdown-extended .pointer-inner {
-	border-color: #F1F8FF transparent;
+	border-color: #faf6f9 transparent;
 }
 
 .dropdown .dropdown-contents {
@@ -1150,14 +1195,20 @@ input.disabled {
 ---------------------------------------- */
 
 .notification_list p.notification-time {
-	color: #4C5D77;
+	color: #675b65;
 }
 
 li.notification-reported strong, li.notification-disapproved strong {
-	color: #D31141;
+	color: #53285d;
 }
 
 .badge {
-	background-color: #D31141;
+	background-color: #53285d;
 	color: #ffffff;
+}
+
+/* CILFA CODE voor advertisment managament achtergrondkleur */
+.phpbb-ads-center {
+	background-color: #F5F5F5;
+	padding: 3px 3px;
 }
